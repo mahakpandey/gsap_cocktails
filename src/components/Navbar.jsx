@@ -1,6 +1,6 @@
-import { navLinks } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   useGSAP(() => {
@@ -11,7 +11,7 @@ const Navbar = () => {
       },
     });
 
-    navTween.from(
+    navTween.fromTo(
       "nav",
       { backgroundColor: "transparent" },
       {
@@ -21,17 +21,14 @@ const Navbar = () => {
         ease: "power1.inOut",
       }
     );
-
-    
   });
 
   return (
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2">
-          {" "}
           <img src="/images/logo.png" alt="logo" />
-          Velvet Pour
+          <p>Velvet Pour</p>
         </a>
 
         <ul>
