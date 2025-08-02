@@ -66,7 +66,7 @@ const Contact = () => {
           <h3>Contact Us</h3>
           <p>info@cocktailbar.com</p>
           <p>(123) 456-7890</p>
-        </div>right
+        </div>
 
         <div>
           <h3>Open Everyday</h3>
